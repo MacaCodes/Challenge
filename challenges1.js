@@ -10,7 +10,7 @@ console.log("I had", food[i])}
 // Challenge 2
 
 function fizzBuzz(num) {
-    if (typeof num !== 'number' || num <= 0) {
+    if (num <= 0) {
       return 'needs to be a positive number';
     } else if (num % 3 && num % 5) {
       return 'fizz buzz';
@@ -22,7 +22,7 @@ function fizzBuzz(num) {
       return num;
     }
   }
-console.log(fizzBuzz(2448387));
+console.log(fizzBuzz(-100));
 
 // challenge 3 
 
@@ -34,10 +34,22 @@ function myNumbers(num1, num2) {
     let sum = num1 + num2;
   
     // Check if the sum is even
-    if (sum % 2) {
+    if (sum % 2 === 0) {
+    // i dont really understand why we need to use the === 0 
       return 'The sum is even: ' + sum;
     } else {
       return 'The sum is odd, multiplying the numbers gives: ' + (num1 * num2);
     }
   }
-  console.log(myNumbers(3, 4));
+  console.log(myNumbers(2, 2));
+
+// challenge 4 
+for (let i = 0; i < 6; i++) {
+  const randomNumber = Math.floor(Math.random() * 50) + 1;
+  console.log(randomNumber);
+  }
+
+  // challenge 5
+  for (let i = 9; i >= 1; i--){
+    console.log(i);
+}
